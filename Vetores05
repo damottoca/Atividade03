@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Vetores05 {
+    public static void main(String[] arg){
+
+
+        class LeituraNomes {
+            public static void main(String[] args) {
+                // Declaração do vetor
+                String[] nomes = new String[3];
+
+                // Criação do objeto Scanner para leitura dos valores
+                Scanner scanner = new Scanner(System.in);
+
+                // Leitura dos nomes inseridos pelo usuário
+                for (int i = 0; i < nomes.length; i++) {
+                    System.out.print("Insira o nome para a posição " + i + ": ");
+                    nomes[i] = scanner.nextLine();
+                }
+
+                // Exibição dos nomes inseridos
+                System.out.println("Nomes inseridos:");
+                for (int i = 0; i < nomes.length; i++) {
+                    System.out.println("Posição " + i + ": " + nomes[i]);
+                }
+
+                // Fechamento do Scanner
+                scanner.close();
+            }
+        }
+
+    }
+}
