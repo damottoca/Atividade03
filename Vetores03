@@ -1,0 +1,22 @@
+public class Vetores03 {
+    public static void main(String[] args) {
+        // Declaração e inicialização do vetor
+        int[] vetor = {5, 10};
+
+        // Exibição dos valores antes da troca
+        System.out.println("Valores antes da troca:");
+        System.out.println("Primeiro elemento: " + vetor[0]);
+        System.out.println("Segundo elemento: " + vetor[1]);
+
+        // Troca dos valores
+        int temp = vetor[0];
+        vetor[0] = vetor[1];
+        vetor[1] = temp;
+
+        // Exibição dos valores após a troca
+        System.out.println("Valores após a troca:");
+        System.out.println("Primeiro elemento: " + vetor[0]);
+        System.out.println("Segundo elemento: " + vetor[1]);
+    }
+}
+
