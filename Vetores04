@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Vetore04 {
+    private static Object Scanner;
+
+    public static void main(String[] arg){
+
+           class LeituraVetor {
+            public static void main(String[] args) {
+                // Declaração do vetor
+                int[] vetor = new int[3];
+
+                // Criação do objeto Scanner para leitura dos valores
+                Scanner scanner = new Scanner(System.in);
+
+                // Leitura dos valores inseridos pelo usuário
+                for (int i = 0; i < vetor.length; i++) {
+                    System.out.print("Insira o valor para a posição " + i + ": ");
+                    vetor[i] = scanner.nextInt();
+                }
+
+                // Exibição dos valores inseridos
+                System.out.println("Valores inseridos:");
+                for (int i = 0; i < vetor.length; i++) {
+                    System.out.println("Posição " + i + ": " + vetor[i]);
+                }
+
+                // Cálculo da média dos valores
+                int soma = 0;
+                for (int i = 0; i < vetor.length; i++) {
+                    soma += vetor[i];
+                }
+                double media = (double) soma / vetor.length;
+
+                // Exibição da média dos valores
+                System.out.println("A média dos valores inseridos é: " + media);
+
+                // Fechamento do Scanner
+                scanner.close();
+            }
+        }
+
+    }
+}
