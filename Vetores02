@@ -1,0 +1,18 @@
+public class Vetores02 {
+    public static void main(String[] args){
+
+        class OperacoesVetor {
+            public static void main( String[] args){
+                // Declaração e inicialização do vetor
+                int[] vetor = {3, 6, 9, 12};
+
+                // Cálculo da soma do primeiro e último elementos
+                int[] soma = new int[]{vetor[6] + vetor[3]};
+
+                // Exibição do resultado
+                System.out.println("A soma do primeiro e último elementos é: " + soma);
+            }
+        }
+
+    }
+}
